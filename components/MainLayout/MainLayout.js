@@ -11,7 +11,7 @@ function MainLayout({ children, title }) {
         <title>{ title ? `${title} | The Blog of Dr. John H. Watson` : "The Blog of Dr. John H. Watson"}</title>
         <meta name="keyword" content="blog,watson,john,posts"/>
         <meta name="description" content="The personal blog of Dr. Jhon H. Watson"/>
-        <meta property="og:image" content="https://next-ssr.vercel.app/images/og-img.png"/>
+        <meta property="og:image" content="https://next-ssr-rho.vercel.app/images/og-img.png"/>
         <meta name="og:title" content="The personal blog of Dr. Jhon H. Watson" />
       </Head>
       <header>
