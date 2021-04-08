@@ -1,29 +1,29 @@
-import {usePosts} from "../store/posts/selector";
-import {initializeStore} from "../store/store";
-import {fetchPosts} from "../store/posts/actions";
+import { usePosts } from "../../store/posts/selector";
+import { fetchPosts } from "../../store/posts/actions";
+import { initializeStore } from "../../store/store";
 
-import MainLayout from "../components/MainLayout/MainLayout";
-import Post from "../components/Post/Post";
+import MainLayout from "../../components/MainLayout/MainLayout";
+import Post from "../../components/Post/Post";
 
-import styles from "../styles/Home.module.scss"
+import styles from '../../styles/Blog.module.scss';
 
-export default function Home() {
+export default function Blog() {
   const { posts } = usePosts();
 
   return (
-    <MainLayout title="Home">
+    <MainLayout title="Blog">
         <div className={styles.title}>
-          Most popular posts
+          All Blog Post
         </div>
         <div className={styles.posts}>
           {
-            posts.slice(0, 3).map(post => (
+            posts.map(post => (
               <Post key={post.id} {...post}/>
             ))
           }
         </div>
     </MainLayout>
-  )
+  );
 }
 
 export async function getStaticProps() {

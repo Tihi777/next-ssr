@@ -1,0 +1,24 @@
+@import "./vars";
+
+.title {
+  font-size: 35px;
+  color: $text-primary;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.date {
+  margin-bottom: 15px;
+  text-align: center;
+  color: $text-secondary;
+}
+
+.content {
+  margin-bottom: 50px;
+  line-height: 160%;
+  white-space: break-spaces;
+  color: $text-primary;
+}
+

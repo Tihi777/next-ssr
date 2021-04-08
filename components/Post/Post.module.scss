@@ -1,0 +1,43 @@
+@import "../../styles/vars";
+
+.post {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 30px;
+  color: $text-primary;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+  text-decoration:none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.date {
+  margin-bottom: 15px;
+  color: $text-secondary;
+}
+
+.preview {
+  margin-bottom: 5px;
+  line-height: 160%;
+  max-height: 100px;
+  color: $text-secondary;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.readMore {
+  color: $blue;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration:none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
